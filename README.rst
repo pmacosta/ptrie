@@ -154,7 +154,7 @@ Contributing
 
     * `Inline Syntax Highlight Sphinx Extension`_ (0.2 or newer)
 
-    * `Pmisc`_ (1.0.0 or newer)
+    * `Pmisc`_ (1.0.2 or newer)
 
     * `Py.test`_ (2.7.0 or newer)
 
