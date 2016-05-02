@@ -41,8 +41,8 @@
 
 |
 
-ptrie module
-============
+Description
+===========
 
 .. role:: bash(code)
 	:language: bash

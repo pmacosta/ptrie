@@ -7,7 +7,6 @@
 # Standard library imports
 from __future__ import print_function
 import argparse
-import multiprocessing
 import os
 import re
 import shutil
@@ -350,42 +349,6 @@ def valid_dir(value):
     return os.path.abspath(value)
 
 
-def valid_module_name(value):
-    """ Argparse checked for module_name argument """
-    ret = []
-    for item in value:
-        if item not in VALID_MODULES:
-            raise argparse.ArgumentTypeError(
-                'module {0} not one of {1}'.format(
-                    item.lower(), ', '.join(VALID_MODULES)
-                )
-            )
-        ret.append(item.lower())
-    return ret
-
-
-def valid_num_cpus(value):
-    """ Argparse checker for num_cpus argument """
-    # pylint: disable=E1101
-    try:
-        value = int(value)
-    except:
-        raise argparse.ArgumentTypeError(
-            'invalid positive integer value: {0}'.format(value)
-        )
-    if value < 1:
-        raise argparse.ArgumentTypeError(
-            'invalid positive integer value: {0}'.format(value)
-        )
-    max_cpus = multiprocessing.cpu_count()
-    if value > max_cpus:
-        raise argparse.ArgumentTypeError(
-            'requested CPUs ({0}) greater than '
-            'available CPUs ({1})'.format(value, max_cpus)
-        )
-    return value
-
-
 def which(name):
     """ Search PATH for executable files with the given name """
     # Inspired by https://twistedmatrix.com/trac/browser/tags/releases/
@@ -403,6 +366,10 @@ def which(name):
 
 if __name__ == "__main__":
     # pylint: disable=E0602
+    # Remove -n from arguments
+    if '-n' in sys.argv:
+        IDX = sys.argv.index('-n')
+        sys.argv = sys.argv[:IDX]+sys.argv[IDX+2:]
     PKG_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     PARSER = argparse.ArgumentParser(
         description='Build ptrie package documentation'
