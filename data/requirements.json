@@ -119,7 +119,7 @@
 		"name":"Pmisc",
 		"optional":false,
 		"url":"http://pmisc.readthedocs.org",
-		"cat":["main"],
+		"cat":["main", "rtd"],
 		"ver":">=1.0.2",
 		"pos":13
 	}
