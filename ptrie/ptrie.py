@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # ptrie.py
-# Copyright (c) 2013-2016 Pablo Acosta-Serafini
+# Copyright (c) 2013-2017 Pablo Acosta-Serafini
 # See LICENSE for details
 # pylint: disable=C0111,R0913,W0105,W0212
 
