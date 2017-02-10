@@ -157,7 +157,7 @@ Contributing
 
     * `Inline Syntax Highlight Sphinx Extension`_ (0.2 or newer)
 
-    * `Pmisc`_ (1.2.1 or newer)
+    * `Pmisc`_ (1.2.2 or newer)
 
     * `Py.test`_ (2.7.0 or newer)
 
@@ -288,13 +288,13 @@ Contributing
 	    usage: build_docs.py [-h] [-d DIRECTORY] [-r]
 	                         [-n NUM_CPUS] [-t]
 
-	    Build pcsv package documentation
+	    Build ptrie package documentation
 
 	    optional arguments:
 	      -h, --help            show this help message and exit
 	      -d DIRECTORY, --directory DIRECTORY
 	                            specify source file directory
-	                            (default ../pcsv)
+	                            (default ../ptrie)
 	      -r, --rebuild         rebuild exceptions documentation.
 	                            If no module name is given all
 	                            modules with auto-generated

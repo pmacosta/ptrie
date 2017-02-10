@@ -5,6 +5,8 @@
 Changelog
 =========
 
+* 1.0.6 [2017-02-09]: Package build enhancements and fixes
+
 * 1.0.5 [2017-02-07]: Python 3.6 support
 
 * 1.0.4 [2016-06-11]: Minor documentation build bug fix
