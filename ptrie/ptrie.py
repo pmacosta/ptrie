@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # ptrie.py
-# Copyright (c) 2013-2017 Pablo Acosta-Serafini
+# Copyright (c) 2013-2018 Pablo Acosta-Serafini
 # See LICENSE for details
 # pylint: disable=C0111,R0913,W0105,W0212
 
@@ -149,8 +149,8 @@ class Trie(object):
         for node in del_list:
             self._del_node(node)
         if recursive:
-            for name in copy.copy(children):
-                self._collapse_subtree(name)
+            for child in copy.copy(children):
+                self._collapse_subtree(child)
 
     def _create_intermediate_nodes(self, name):
         """ Create intermediate nodes if hierarchy does not exist """
@@ -386,15 +386,15 @@ class Trie(object):
         """ NodeName pseudo-type validation """
         # pylint: disable=R0201
         var_values = var_value if isinstance(var_value, list) else [var_value]
-        for var_value in var_values:
-            if ((not isinstance(var_value, str)) or
-               (isinstance(var_value, str) and
-               ((' ' in var_value) or
+        for item in var_values:
+            if ((not isinstance(item, str)) or
+               (isinstance(item, str) and
+               ((' ' in item) or
                any(
                    [
                        element.strip() == ''
                        for element in
-                       var_value.strip().split(self._node_separator)
+                       item.strip().split(self._node_separator)
                    ]
                )))):
                 return True

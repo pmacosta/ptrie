@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # build_wheel_cache.py
-# Copyright (c) 2013-2017 Pablo Acosta-Serafini
+# Copyright (c) 2013-2018 Pablo Acosta-Serafini
 # See LICENSE for details
 # pylint: disable=C0111
 
@@ -96,7 +96,7 @@ def build_wheel_cache(pyvers):
     pkg_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
     pyvers = (
         ['2.6', '2.7', '3.3', '3.4', '3.5', '3.6']
-        if not len(pyvers) else
+        if not pyvers else
         pyvers
     )
     old_python_path = os.environ['PYTHONPATH']
