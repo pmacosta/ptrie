@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # ptrie.py
-# Copyright (c) 2013-2018 Pablo Acosta-Serafini
+# Copyright (c) 2013-2019 Pablo Acosta-Serafini
 # See LICENSE for details
-# pylint: disable=C0111,R0913,W0105,W0212
+# pylint: disable=C0111,R0205,R0913,W0105,W0212
 
 # Standard library imports
 import copy
@@ -222,7 +222,7 @@ class Trie(object):
 
     def _empty_tree(self):
         """ Tests whether the object (tree) has any nodes/data """
-        return True if not self._db else False
+        return not self._db
 
     def _find_common_prefix(self, node1, node2):
         """ Find common prefix between two nodes """

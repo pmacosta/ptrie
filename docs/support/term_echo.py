@@ -1,7 +1,7 @@
 # term_echo.py
-# Copyright (c) 2013-2018 Pablo Acosta-Serafini
+# Copyright (c) 2013-2019 Pablo Acosta-Serafini
 # See LICENSE for details
-# pylint: disable=C0111
+# pylint: disable=C0111,R0912,R1717
 
 import os
 import platform
@@ -15,11 +15,11 @@ import sys
 def ste(command, nindent, mdir, fpointer):
     """
     Simplified terminal echo; prints STDOUT resulting from a given Bash shell
-    command (relative to the package :code:`sbin` directory) formatted
+    command (relative to the package :code:`pypkg` directory) formatted
     in reStructuredText
 
     :param command: Bash shell command, relative to
-                    :bash:`${PMISC_DIR}/sbin`
+                    :bash:`${PMISC_DIR}/pypkg`
     :type  command: string
 
     :param nindent: Indentation level
@@ -49,7 +49,7 @@ def ste(command, nindent, mdir, fpointer):
 
         .. code-block:: bash
 
-        $ ${PMISC_DIR}/sbin/build_docs.py -h
+        $ ${PMISC_DIR}/pypkg/build_docs.py -h
         usage: build_docs.py [-h] [-d DIRECTORY] [-n NUM_CPUS]
         ...
 
@@ -57,7 +57,7 @@ def ste(command, nindent, mdir, fpointer):
 
     """
     term_echo(
-        '${{PMISC_DIR}}{sep}sbin{sep}{cmd}'.format(
+        '${{PMISC_DIR}}{sep}pypkg{sep}{cmd}'.format(
             sep=os.path.sep, cmd=command
         ),
         nindent,

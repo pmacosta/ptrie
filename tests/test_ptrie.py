@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # test_ptrie.py
-# Copyright (c) 2013-2018 Pablo Acosta-Serafini
+# Copyright (c) 2013-2019 Pablo Acosta-Serafini
 # See LICENSE for details
-# pylint: disable=C0103,C0111,R0201,R0904,R0914,W0212,W0232,W0621
+# pylint: disable=C0103,C0111,R0201,R0205,R0904,R0914,W0212,W0232,W0621
 
 # Standard library imports
 import copy
