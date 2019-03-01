@@ -59,6 +59,7 @@ Description
 .. _Cog: https://nedbatchelder.com/code/cog
 .. _Coverage: https://coverage.readthedocs.io
 .. _Docutils: http://docutils.sourceforge.net/docs
+.. _Mock: https://docs.python.org/3/library/unittest.mock.html
 .. _Pmisc: http://pmisc.readthedocs.org
 .. _Pylint: https://www.pylint.org
 .. _Py.test: http://pytest.org
@@ -68,6 +69,8 @@ Description
 .. _ReadTheDocs Sphinx theme: https://github.com/rtfd/sphinx_rtd_theme
 .. _Inline Syntax Highlight Sphinx Extension:
    https://bitbucket.org/klorenz/sphinxcontrib-inlinesyntaxhighlight
+.. _Shellcheck Linter Sphinx Extension:
+   https://pypi.org/project/sphinxcontrib-shellcheck
 .. _Tox: https://tox.readthedocs.io
 .. _Virtualenv: https://docs.python-guide.org/dev/virtualenvs
 .. [[[end]]]
@@ -152,6 +155,8 @@ Contributing
 
     * `Inline Syntax Highlight Sphinx Extension`_ (0.2 or newer)
 
+    * `Mock`_ (2.0.0 or newer)
+
     * `Pmisc`_ (1.5.3 or newer)
 
     * `Py.test`_ (3.3.2 or newer)
@@ -163,6 +168,8 @@ Contributing
     * `Pytest-xdist`_ (optional, 1.22.0 or newer)
 
     * `ReadTheDocs Sphinx theme`_ (0.1.9 or newer)
+
+    * `Shellcheck Linter Sphinx Extension`_ (1.0.5 or newer)
 
     * `Sphinx`_ (1.6.6 or newer)
 
