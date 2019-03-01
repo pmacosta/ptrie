@@ -8,6 +8,6 @@
 # Function
 ###
 def _readlines(fname):  # pragma: no cover
-    """ Read all lines from file """
-    with open(fname, 'r') as fobj:
+    """Read all lines from file."""
+    with open(fname, "r") as fobj:
         return fobj.readlines()
