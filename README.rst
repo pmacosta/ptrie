@@ -60,6 +60,7 @@ Description
 .. _Pylint: https://www.pylint.org
 .. _Py.test: http://pytest.org
 .. _Pytest-coverage: https://pypi.org/project/pytest-cov
+.. _Pytest-pmisc: http://pytest-pmisc.readthedocs.org
 .. _Pytest-xdist: https://pypi.org/project/pytest-xdist
 .. _Sphinx: http://sphinx-doc.org
 .. _ReadTheDocs Sphinx theme: https://github.com/rtfd/sphinx_rtd_theme
@@ -160,6 +161,8 @@ Contributing
     * `Pylint`_ (1.8.1 or newer)
 
     * `Pytest-coverage`_ (2.5.1 or newer)
+
+    * `Pytest-pmisc`_ (1.0.3 or newer)
 
     * `Pytest-xdist`_ (optional, 1.22.0 or newer)
 
@@ -311,7 +314,7 @@ Contributing
 
 .. [#f2] It is assumed that all the Python interpreters are in the executables
    path. Source code for the interpreters can be downloaded from Python's main
-   `site <https://www.python.org/downloads>`_
+   `site <https://www.python.org/downloads/>`_
 
 .. [#f3] Tox configuration largely inspired by
    `Ionel's codelog <https://blog.ionelmc.ro/2015/04/14/
