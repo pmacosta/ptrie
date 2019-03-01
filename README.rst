@@ -2,7 +2,6 @@
 .. Copyright (c) 2013-2019 Pablo Acosta-Serafini
 .. See LICENSE for details
 
-
 .. image:: https://badge.fury.io/py/ptrie.svg
     :target: https://pypi.org/project/ptrie
     :alt: PyPI version
@@ -22,22 +21,19 @@
 |
 
 .. image::
-   https://travis-ci.org/pmacosta/ptrie.svg?branch=master
+    https://dev.azure.com/pmasdev/ptrie/_apis/build/status/pmacosta.ptrie?branchName=master
+    :target: https://dev.azure.com/pmasdev/ptrie/_build?definitionId=3&_a=summary
+    :alt: Continuous integration test status
 
 .. image::
-   https://ci.appveyor.com/api/projects/status/
-   7dpk342kxs8kcg5t/branch/master?svg=true
-   :alt: Windows continuous integration
+    https://img.shields.io/azure-devops/coverage/pmasdev/ptrie/4.svg
+    :target: https://dev.azure.com/pmasdev/ptrie/_build?definitionId=3&_a=summary
+    :alt: Continuous integration test coverage
 
 .. image::
-   https://codecov.io/github/pmacosta/ptrie/coverage.svg?branch=master
-   :target: https://codecov.io/github/pmacosta/ptrie?branch=master
-   :alt: Continuous integration coverage
-
-.. image::
-   https://pip.readthedocs.io/en/stable/?version=stable
-   :target: https://pip.readthedocs.io/en/stable/?badge=stable
-   :alt: Documentation status
+    https://readthedocs.org/projects/pip/badge/?version=stable
+    :target: https://pip.readthedocs.io/en/stable/?badge=stable
+    :alt: Documentation status
 
 |
 
