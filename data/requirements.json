@@ -126,5 +126,13 @@
 		"cat":["tests", "rtd"],
 		"ver":">=2.0.0",
 		"pos":15
+	},
+	"pytest-pmisc":{
+		"name":"Pytest-pmisc",
+		"optional":false,
+		"url":"http://pytest-pmisc.readthedocs.org",
+		"cat":["tests"],
+		"ver":">=1.0.3",
+		"pos":19
 	}
 }
