@@ -1,4 +1,4 @@
-personal_ws-1.1 en 1744 utf-8
+personal_ws-1.1 en 1745 utf-8
 9b0
 a4paper
 aa
@@ -1661,6 +1661,7 @@ VERS
 versa
 verticalalignment
 viewcode
+virtualenv
 Virtualenv
 vnum
 vv
