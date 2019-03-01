@@ -5,4 +5,4 @@
 Authors
 =======
 
-Pablo Acosta-Serafini
+Pablo Acosta-Serafini <pmasdev@gmail.com>
