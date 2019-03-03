@@ -108,7 +108,7 @@
 		"optional":false,
 		"url":"http://pmisc.readthedocs.org",
 		"cat":["main", "rtd"],
-		"ver":">=1.5.3",
+		"ver":">=1.5.5",
 		"pos":13
 	},
 	"sphinxcontrib-shellcheck":{
@@ -132,7 +132,7 @@
 		"optional":false,
 		"url":"http://pytest-pmisc.readthedocs.org",
 		"cat":["tests"],
-		"ver":">=1.0.3",
+		"ver":">=1.0.6",
 		"pos":19
 	}
 }

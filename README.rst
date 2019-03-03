@@ -66,8 +66,8 @@ Description
 .. _ReadTheDocs Sphinx theme: https://github.com/rtfd/sphinx_rtd_theme
 .. _Inline Syntax Highlight Sphinx Extension:
    https://bitbucket.org/klorenz/sphinxcontrib-inlinesyntaxhighlight
-.. _Shellcheck Linter Sphinx Extension:
-   https://pypi.org/project/sphinxcontrib-shellcheck
+.. _Shellcheck Linter Sphinx Extension: https://pypi.org/project
+   /sphinxcontrib-shellcheck
 .. _Tox: https://tox.readthedocs.io
 .. _Virtualenv: https://docs.python-guide.org/dev/virtualenvs
 .. [[[end]]]
@@ -154,7 +154,7 @@ Contributing
 
     * `Mock`_ (2.0.0 or newer)
 
-    * `Pmisc`_ (1.5.3 or newer)
+    * `Pmisc`_ (1.5.5 or newer)
 
     * `Py.test`_ (3.3.2 or newer)
 
@@ -162,7 +162,7 @@ Contributing
 
     * `Pytest-coverage`_ (2.5.1 or newer)
 
-    * `Pytest-pmisc`_ (1.0.3 or newer)
+    * `Pytest-pmisc`_ (1.0.6 or newer)
 
     * `Pytest-xdist`_ (optional, 1.22.0 or newer)
 
