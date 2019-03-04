@@ -94,7 +94,7 @@ class Trie(object):
         """
         return bool(self._db)
 
-    def __str__(self):
+    def __str__(self):  # noqa: D302
         """
         Return a string with the tree 'pretty printed' as a character-based structure.
 
@@ -423,7 +423,7 @@ class Trie(object):
             ):
                 raise RuntimeError("Argument `nodes` is not valid")
 
-    def add_nodes(self, nodes):
+    def add_nodes(self, nodes):  # noqa: D302
         r"""
         Add nodes to tree.
 
@@ -507,7 +507,7 @@ class Trie(object):
                 else ([] if isinstance(data, list) else [data])
             )
 
-    def collapse_subtree(self, name, recursive=True):
+    def collapse_subtree(self, name, recursive=True):  # noqa: D302
         r"""
         Collapse a sub-tree.
 
@@ -566,7 +566,7 @@ class Trie(object):
         self._node_in_tree(name)
         self._collapse_subtree(name, recursive)
 
-    def copy_subtree(self, source_node, dest_node):
+    def copy_subtree(self, source_node, dest_node):  # noqa: D302
         r"""
         Copy a sub-tree from one sub-node to another.
 
@@ -641,7 +641,7 @@ class Trie(object):
             self._db[parent]["children"] + [dest_node]
         )
 
-    def delete_prefix(self, name):
+    def delete_prefix(self, name):  # noqa: D302
         r"""
         Delete hierarchy levels from all nodes in the tree.
 
@@ -691,7 +691,7 @@ class Trie(object):
             raise RuntimeError("Argument `name` is not a valid prefix")
         self._delete_prefix(name)
 
-    def delete_subtree(self, nodes):
+    def delete_subtree(self, nodes):  # noqa: D302
         r"""
         Delete nodes (and their sub-trees) from the tree.
 
@@ -728,7 +728,7 @@ class Trie(object):
             raise RuntimeError("Argument `nodes` is not valid")
         self._delete_subtree(nodes)
 
-    def flatten_subtree(self, name):
+    def flatten_subtree(self, name):  # noqa: D302
         r"""
         Flatten sub-tree.
 
@@ -934,7 +934,7 @@ class Trie(object):
         self._node_in_tree(name)
         return self._db[self._db[name]["parent"]] if not self.is_root(name) else {}
 
-    def get_subtree(self, name):
+    def get_subtree(self, name):  # noqa: D302
         r"""
         Get all node names in a sub-tree.
 
@@ -1027,7 +1027,7 @@ class Trie(object):
         self._node_in_tree(name)
         return not self._db[name]["children"]
 
-    def make_root(self, name):
+    def make_root(self, name):  # noqa: D302
         r"""
         Make a sub-node the root node of the tree.
 
@@ -1074,7 +1074,7 @@ class Trie(object):
                 self.root_name.split(self._node_separator)
             )
 
-    def print_node(self, name):
+    def print_node(self, name):  # noqa: D302
         r"""
         Print node information (parent, children and data).
 
@@ -1132,7 +1132,7 @@ class Trie(object):
             )
         )
 
-    def rename_node(self, name, new_name):
+    def rename_node(self, name, new_name):  # noqa: D302
         r"""
         Rename a tree node.
 
@@ -1202,7 +1202,7 @@ class Trie(object):
             raise RuntimeError("Argument `new_name` is an illegal root node name")
         self._rename_node(name, new_name)
 
-    def search_tree(self, name):
+    def search_tree(self, name):  # noqa: D302
         r"""
         Search tree for all nodes with a specific name.
 

@@ -134,5 +134,13 @@
 		"cat":["tests"],
 		"ver":">=1.0.6",
 		"pos":19
+	},
+	"pydocstyle":{
+		"name":"Pydocstyle",
+		"optional":false,
+		"url":"http://www.pydocstyle.org",
+		"cat":["tests"],
+		"ver":">=3.0.0",
+		"pos":20
 	}
 }
