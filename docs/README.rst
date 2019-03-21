@@ -294,32 +294,32 @@
 .. ]]]
 .. [REMOVE STOP]
 
-.. image:: https://badge.fury.io/py/ptrie.svg
-    :target: https://pypi.org/project/ptrie
+.. image:: https://badge.fury.io/py/pmisc.svg
+    :target: https://pypi.org/project/pmisc
     :alt: PyPI version
 
-.. image:: https://img.shields.io/pypi/l/ptrie.svg
-    :target: https://pypi.org/project/ptrie
+.. image:: https://img.shields.io/pypi/l/pmisc.svg
+    :target: https://pypi.org/project/pmisc
     :alt: License
 
-.. image:: https://img.shields.io/pypi/pyversions/ptrie.svg
-    :target: https://pypi.org/project/ptrie
+.. image:: https://img.shields.io/pypi/pyversions/pmisc.svg
+    :target: https://pypi.org/project/pmisc
     :alt: Python versions supported
 
-.. image:: https://img.shields.io/pypi/format/ptrie.svg
-    :target: https://pypi.org/project/ptrie
+.. image:: https://img.shields.io/pypi/format/pmisc.svg
+    :target: https://pypi.org/project/pmisc
     :alt: Format
 
 |
 
 .. image::
-    https://dev.azure.com/pmasdev/ptrie/_apis/build/status/pmacosta.ptrie?branchName=master
-    :target: https://dev.azure.com/pmasdev/ptrie/_build?definitionId=4&_a=summary
+    https://dev.azure.com/pmasdev/pmisc/_apis/build/status/pmacosta.pmisc?branchName=master
+    :target: https://dev.azure.com/pmasdev/pmisc/_build?definitionId=4&_a=summary
     :alt: Continuous integration test status
 
 .. image::
-    https://img.shields.io/azure-devops/coverage/pmasdev/ptrie/4.svg
-    :target: https://dev.azure.com/pmasdev/ptrie/_build?definitionId=4&_a=summary
+    https://img.shields.io/azure-devops/coverage/pmasdev/pmisc/4.svg
+    :target: https://dev.azure.com/pmasdev/pmisc/_build?definitionId=4&_a=summary
     :alt: Continuous integration test coverage
 
 .. image::
@@ -337,21 +337,23 @@ Description
 
 .. _Cog: https://nedbatchelder.com/code/cog
 .. _Coverage: https://coverage.readthedocs.io
+.. _Decorator: https://raw.githubusercontent.com/micheles/decorator/mast
+   er/docs/documentation.md
 .. _Docutils: http://docutils.sourceforge.net/docs
+.. _Funcsigs: https://pypi.org/project/funcsigs
 .. _Mock: https://docs.python.org/3/library/unittest.mock.html
-.. _Pmisc: http://pmisc.readthedocs.org
+.. _Numpy: http://www.numpy.org
 .. _Pydocstyle: http://www.pydocstyle.org
 .. _Pylint: https://www.pylint.org
-.. _Py.test: http://pytest.org
+.. _Pytest: http://pytest.org
 .. _Pytest-coverage: https://pypi.org/project/pytest-cov
-.. _Pytest-pmisc: http://pytest-pmisc.readthedocs.org
 .. _Pytest-xdist: https://pypi.org/project/pytest-xdist
 .. _Sphinx: http://sphinx-doc.org
 .. _ReadTheDocs Sphinx theme: https://github.com/rtfd/sphinx_rtd_theme
 .. _Inline Syntax Highlight Sphinx Extension:
    https://bitbucket.org/klorenz/sphinxcontrib-inlinesyntaxhighlight
-.. _Shellcheck Linter Sphinx Extension:
-   https://pypi.org/project/sphinxcontrib-shellcheck
+.. _Shellcheck Linter Sphinx Extension: https://pypi.org/project
+   /sphinxcontrib-shellcheck
 .. _Tox: https://tox.readthedocs.io
 .. _Virtualenv: https://docs.python-guide.org/dev/virtualenvs
 
@@ -369,12 +371,12 @@ Installing
 
 .. code-block:: console
 
-	$ pip install ptrie
+	$ pip install pmisc
 
 Documentation
 =============
 
-Available at `Read the Docs <https://ptrie.readthedocs.io>`_
+Available at `Read the Docs <https://pmisc.readthedocs.io>`_
 
 Contributing
 ============
@@ -382,18 +384,18 @@ Contributing
 1. Abide by the adopted `code of conduct
    <https://www.contributor-covenant.org/version/1/4/code-of-conduct>`_
 
-2. Fork the `repository <https://github.com/pmacosta/ptrie>`_ from GitHub and
+2. Fork the `repository <https://github.com/pmacosta/pmisc>`_ from GitHub and
    then clone personal copy [#f1]_:
 
     .. code-block:: console
 
         $ github_user=myname
         $ git clone --recurse-submodules \
-              https://github.com/"${github_user}"/ptrie.git
-        Cloning into 'ptrie'...
+              https://github.com/"${github_user}"/pmisc.git
+        Cloning into 'pmisc'...
         ...
-        $ cd ptrie || exit 1
-        $ export PTRIE_DIR=${PWD}
+        $ cd pmisc || exit 1
+        $ export PMISC_DIR=${PWD}
         $
 
 3. The package uses two sub-modules: a set of custom Pylint plugins to help with
@@ -405,9 +407,9 @@ Contributing
 
     .. code-block:: console
 
-        $ cd "${PTRIE_DIR}" || exit 1
+        $ cd "${PMISC_DIR}" || exit 1
         $ pre-commit install
-        pre-commit installed at .../ptrie/.git/hooks/pre-commit
+        pre-commit installed at .../pmisc/.git/hooks/pre-commit
         $
 
 4. Ensure that the Python interpreter can find the package modules
@@ -417,7 +419,7 @@ Contributing
 
    .. code-block:: console
 
-       $ export PYTHONPATH=${PYTHONPATH}:${PTRIE_DIR}
+       $ export PYTHONPATH=${PYTHONPATH}:${PMISC_DIR}
        $
 
 5. Install the dependencies (if needed, done automatically by pip):
@@ -427,25 +429,27 @@ Contributing
 
     * `Coverage`_ (4.5.3 or newer)
 
+    * `Decorator`_ (4.4.0 or newer)
+
     * `Docutils`_ (0.14 or newer)
+
+    * `Funcsigs`_ (1.0.2 or newer)
 
     * `Inline Syntax Highlight Sphinx Extension`_ (0.2 or newer)
 
     * `Mock`_ (2.0.0 or newer)
 
-    * `Pmisc`_ (1.5.7 or newer)
-
-    * `Py.test`_ (4.3.1 or newer)
+    * `Numpy`_ (1.16.2 or newer)
 
     * `Pydocstyle`_ (3.0.0 or newer)
 
     * `Pylint`_ (Python 2.x: 1.9.4 or newer, Python 3.x: 2.3.1 or newer)
 
+    * `Pytest`_ (4.3.1 or newer)
+
     * `Pytest-coverage`_ (2.6.1 or newer)
 
-    * `Pytest-pmisc`_ (1.0.6 or newer)
-
-    * `Pytest-xdist`_ (optional, 1.26.0 or newer)
+    * `Pytest-xdist`_ (optional, 1.26.1 or newer)
 
     * `ReadTheDocs Sphinx theme`_ (0.4.3 or newer)
 
@@ -467,10 +471,10 @@ Contributing
 
    .. code-block:: console
 
-       $ PKG_NAME=ptrie tox
-       GLOB sdist-make: .../ptrie/setup.py
-       py27-pkg create: .../ptrie/.tox/py27
-       py27-pkg installdeps: -r.../ptrie/requirements/tests_py27.pip, -r.../ptrie/requirements/docs_py27.pip
+       $ PKG_NAME=pmisc tox
+       GLOB sdist-make: .../pmisc/setup.py
+       py27-pkg create: .../pmisc/.tox/py27
+       py27-pkg installdeps: -r.../pmisc/requirements/tests_py27.pip, -r.../pmisc/requirements/docs_py27.pip
        ...
          py27-pkg: commands succeeded
          py35-pkg: commands succeeded
@@ -484,12 +488,12 @@ Contributing
 
    .. code-block:: console
 
-       $ PKG_NAME=ptrie python setup.py tests
+       $ PKG_NAME=pmisc python setup.py tests
        running tests
        running egg_info
-       writing ptrie.egg-info/PKG-INFO
-       writing dependency_links to ptrie.egg-info/dependency_links.txt
-       writing requirements to ptrie.egg-info/requires.txt
+       writing pmisc.egg-info/PKG-INFO
+       writing dependency_links to pmisc.egg-info/dependency_links.txt
+       writing requirements to pmisc.egg-info/requires.txt
        ...
          py27-pkg: commands succeeded
          py35-pkg: commands succeeded
@@ -508,9 +512,9 @@ Contributing
 
    .. code-block:: console
 
-       $ PKG_NAME=ptrie tox -e py27-pkg -- -n 4
-       GLOB sdist-make: .../ptrie/setup.py
-       py27-pkg inst-nodeps: .../ptrie/.tox/.tmp/package/1/ptrie-1.1.4.zip
+       $ PKG_NAME=pmisc tox -e py27-pkg -- -n 4
+       GLOB sdist-make: .../pmisc/setup.py
+       py27-pkg inst-nodeps: .../pmisc/.tox/.tmp/package/1/pmisc-1.1.5.zip
        ...
          py27-pkg: commands succeeded
          congratulations :)
@@ -521,7 +525,7 @@ Contributing
 
    .. code-block:: console
 
-       $ PKG_NAME=ptrie python setup.py tests -a "-e py27-pkg -- -n 4"
+       $ PKG_NAME=pmisc python setup.py tests -a "-e py27-pkg -- -n 4"
        running tests
        ...
          py27-pkg: commands succeeded
@@ -532,7 +536,7 @@ Contributing
 
     * ``py27-repl``, ``py35-repl``, ``py36-repl`` and ``py37-repl`` run the
       Python 2.7, 3.5, 3.6 and 3.7 REPL, respectively, in the appropriate
-      virtual environment. The ``ptrie`` package is pip-installed by Tox when
+      virtual environment. The ``pmisc`` package is pip-installed by Tox when
       the environments are created.  Arguments to the interpreter can be
       passed in the command line after a double dash (``--``).
 
@@ -543,9 +547,9 @@ Contributing
 
       .. code-block:: console
 
-       $ PKG_NAME=ptrie tox -e py27-test -- -x test_ptrie.py
-       GLOB sdist-make: .../ptrie/setup.py
-       py27-pkg inst-nodeps: .../ptrie/.tox/.tmp/package/1/ptrie-1.1.4.zip
+       $ PKG_NAME=pmisc tox -e py27-test -- -x test_pmisc.py
+       GLOB sdist-make: .../pmisc/setup.py
+       py27-pkg inst-nodeps: .../pmisc/.tox/.tmp/package/1/pmisc-1.1.5.zip
        ...
          py27-pkg: commands succeeded
          congratulations :)
@@ -554,8 +558,8 @@ Contributing
       and branch coverage using the 2.7, 3.5, 3.6 and 3.7 interpreter,
       respectively, in the appropriate virtual environment. Arguments to
       pytest can be passed in the command line after a double dash (``--``).
-      The report can be found in :bash:`${PTRIE_DIR}/.tox/py[PV]/usr/share/ptr
-      ie/tests/htmlcov/index.html` where ``[PV]`` stands for ``2.7``, ``3.5``,
+      The report can be found in :bash:`${PMISC_DIR}/.tox/py[PV]/usr/share/pmi
+      sc/tests/htmlcov/index.html` where ``[PV]`` stands for ``2.7``, ``3.5``,
       ``3.6`` or ``3.7`` depending on the interpreter used.
 
 8. Verify that continuous integration tests pass. The package has continuous
@@ -563,23 +567,23 @@ Contributing
    `Azure DevOps <https://dev.azure.com/pmasdev>`_).
 
 9. Document the new feature or bug fix (if needed). The script
-   :bash:`${PTRIE_DIR}/pypkg/build_docs.py` re-builds the whole package
+   :bash:`${PMISC_DIR}/pypkg/build_docs.py` re-builds the whole package
    documentation (re-generates images, cogs source files, etc.):
 
 
    .. code-block:: console
 
-       $ "${PTRIE_DIR}"/pypkg/build_docs.py -h
+       $ "${PMISC_DIR}"/pypkg/build_docs.py -h
        usage: build_docs.py [-h] [-d DIRECTORY] [-r]
                             [-n NUM_CPUS] [-t]
 
-       Build ptrie package documentation
+       Build pmisc package documentation
 
        optional arguments:
          -h, --help            show this help message and exit
          -d DIRECTORY, --directory DIRECTORY
                                specify source file directory
-                               (default ../ptrie)
+                               (default ../pmisc)
          -r, --rebuild         rebuild exceptions documentation.
                                If no module name is given all
                                modules with auto-generated

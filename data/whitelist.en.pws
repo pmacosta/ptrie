@@ -1,4 +1,4 @@
-personal_ws-1.1 en 1791 utf-8
+personal_ws-1.1 en 1794 utf-8
 9b0
 a4paper
 aa
@@ -425,6 +425,7 @@ EPS
 epub
 eq
 eqs
+er
 erec
 errno
 esc
@@ -865,6 +866,7 @@ markersize
 mathjax
 matplotlib
 Matplotlib
+md
 mdict
 mdir
 mediumaquamarine
@@ -1402,6 +1404,7 @@ sandybrown
 sarg
 sbin
 SBIN
+sc
 schar
 scipy
 Scipy
