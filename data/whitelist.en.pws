@@ -1,5 +1,4 @@
-personal_ws-1.1 en 1762 utf-8
-mpl
+personal_ws-1.1 en 1791 utf-8
 9b0
 a4paper
 aa
@@ -32,6 +31,7 @@ ai
 aliceblue
 aline
 alist
+ALLSPHINXOPTS
 alphanums
 antiquewhite
 anumber
@@ -132,9 +132,11 @@ bnode
 bobj
 bool
 boolean
+branchName
 btype
 buf
 BuGn
+BUILDDIR
 BuildEnvironment
 builtin
 builtins
@@ -205,6 +207,7 @@ codecs
 codelog
 cogapp
 cogging
+collectionFile
 colno
 ColorSpaceOption
 compat
@@ -322,6 +325,8 @@ DESC
 dest
 detailmenu
 dev
+devhelp
+Devhelp
 DevOps
 DEVSTAT
 df
@@ -335,6 +340,7 @@ diff
 difflib
 dimgray
 dir
+dirhtml
 dirname
 DIRPATH
 dirs
@@ -377,6 +383,7 @@ dtype
 dvar
 dvec
 dvector
+dvipdfmx
 E1101
 E1129
 eamsg
@@ -392,6 +399,7 @@ elif
 emsg
 encodings
 encprop
+endif
 endswith
 eng
 EngineeringNotationNumber
@@ -593,6 +601,7 @@ getreprcrash
 getsourcelines
 getter
 Getter
+gettext
 ghostwhite
 giga
 github
@@ -612,6 +621,7 @@ Hettinger
 hexdigits
 hexversion
 HH
+hhp
 hier
 hnf
 hookimpl
@@ -639,7 +649,9 @@ idict
 idv
 idx
 IDX
+ie
 IEXEC
+ifeq
 ifname
 ifobj
 ifrow
@@ -677,6 +689,7 @@ init
 Init
 inline
 inlinesyntaxhighlight
+installdeps
 instantiation
 interp
 InterpolatedUnivariateSpline
@@ -730,6 +743,7 @@ ivar
 ivector
 IXUSR
 izip
+ja
 json
 JSON
 kcg
@@ -749,6 +763,8 @@ LambdaType
 lang
 lasti
 lastword
+latexpdf
+latexpdfja
 lavenderblush
 lawngreen
 lcount
@@ -838,6 +854,7 @@ macOS
 makedir
 makedirs
 Makefile
+makeinfo
 makereport
 mant
 mapleleaf
@@ -897,6 +914,7 @@ modname
 moduleauthor
 ModuleType
 mopen
+mpl
 msec
 msg
 msgs
@@ -1077,6 +1095,7 @@ palegreen
 paleturquoise
 palevioletred
 papayawhip
+PAPEROPT
 papersize
 param
 Param
@@ -1101,6 +1120,7 @@ pcontracts
 pcsv
 PCSV
 pdf
+pdflatex
 pdict
 pdir
 peachpuff
@@ -1128,6 +1148,7 @@ pkgdata
 pkgdir
 pkgs
 pkl
+platex
 plist
 plottable
 plst
@@ -1171,6 +1192,7 @@ proc
 procutils
 prt
 ps
+pseudoxml
 ptrie
 PTRIE
 ptxt
@@ -1225,6 +1247,9 @@ pythonpath
 PYTHONPATH
 pyver
 pyvers
+qcollectiongenerator
+qhcp
+qthelp
 quickstart
 R0205
 R0903
@@ -1265,6 +1290,7 @@ readlink
 readme
 README
 readouterr
+readthedocs
 ReadTheDocs
 READTHEDOCS
 RealNum
@@ -1431,6 +1457,7 @@ sig
 SIGINT
 SimpleClass
 sindent
+singlehtml
 sinh
 sitem
 skeys
@@ -1457,6 +1484,7 @@ spellchecker
 SpellChecker
 sphinx
 Sphinx
+SPHINXBUILD
 sphinxcontrib
 SphinxError
 SPHINXOPTS

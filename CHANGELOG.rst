@@ -5,6 +5,8 @@
 Changelog
 =========
 
+* 1.1.4 [2019-03-21]: Documentation update
+
 * 1.1.3 [2019-03-04]: Documentation update
 
 * 1.1.2 [2019-03-02]: Critical dependencies update
