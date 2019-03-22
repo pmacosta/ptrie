@@ -5,6 +5,8 @@
 Changelog
 =========
 
+* 1.1.6 [2019-03-21]: Dependency bug fix
+
 * 1.1.5 [2019-03-21]: Dependency update
 
 * 1.1.4 [2019-03-21]: Documentation update

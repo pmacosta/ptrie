@@ -14,7 +14,7 @@ import sys
 ###
 class Trie(object):
     r"""
-    Provides basic `trie <http://wikipedia.org/wiki/Trie>`_ (radix tree) functionality.
+    Provides basic `trie <https://en.wikipedia.org/wiki/Trie>`_ functionality.
 
     :param node_separator: Single character used to separate nodes in the tree
     :type  node_separator: string

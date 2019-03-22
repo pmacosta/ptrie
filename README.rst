@@ -58,8 +58,8 @@ Description
 .. _ReadTheDocs Sphinx theme: https://github.com/rtfd/sphinx_rtd_theme
 .. _Inline Syntax Highlight Sphinx Extension:
    https://bitbucket.org/klorenz/sphinxcontrib-inlinesyntaxhighlight
-.. _Shellcheck Linter Sphinx Extension:
-   https://pypi.org/project/sphinxcontrib-shellcheck
+.. _Shellcheck Linter Sphinx Extension: https://pypi.org/project
+   /sphinxcontrib-shellcheck
 .. _Tox: https://tox.readthedocs.io
 .. _Virtualenv: https://docs.python-guide.org/dev/virtualenvs
 
@@ -141,7 +141,7 @@ Contributing
 
     * `Mock`_ (2.0.0 or newer)
 
-    * `Pmisc`_ (1.5.7 or newer)
+    * `Pmisc`_ (1.5.8 or newer)
 
     * `Py.test`_ (4.3.1 or newer)
 
@@ -151,7 +151,7 @@ Contributing
 
     * `Pytest-coverage`_ (2.6.1 or newer)
 
-    * `Pytest-pmisc`_ (1.0.6 or newer)
+    * `Pytest-pmisc`_ (1.0.7 or newer)
 
     * `Pytest-xdist`_ (optional, 1.26.0 or newer)
 
@@ -218,7 +218,7 @@ Contributing
 
        $ PKG_NAME=ptrie tox -e py27-pkg -- -n 4
        GLOB sdist-make: .../ptrie/setup.py
-       py27-pkg inst-nodeps: .../ptrie/.tox/.tmp/package/1/ptrie-1.1.4.zip
+       py27-pkg inst-nodeps: .../ptrie/.tox/.tmp/package/1/ptrie-1.1.6.zip
        ...
          py27-pkg: commands succeeded
          congratulations :)
@@ -253,7 +253,7 @@ Contributing
 
        $ PKG_NAME=ptrie tox -e py27-test -- -x test_ptrie.py
        GLOB sdist-make: .../ptrie/setup.py
-       py27-pkg inst-nodeps: .../ptrie/.tox/.tmp/package/1/ptrie-1.1.4.zip
+       py27-pkg inst-nodeps: .../ptrie/.tox/.tmp/package/1/ptrie-1.1.6.zip
        ...
          py27-pkg: commands succeeded
          congratulations :)
