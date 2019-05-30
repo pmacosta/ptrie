@@ -108,6 +108,7 @@ class Trie(object):
         )
 
     def __copy__(self, memodict=None):  # noqa
+        """Return a (deep) copy of a :py:class:`ptrie.Trie` object."""
         memodict = {} if memodict is None else memodict
         cobj = Trie(self.node_separator)
         cobj._db = copy.deepcopy(self._db, memodict)

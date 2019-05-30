@@ -52,5 +52,5 @@ Class
               get_leafs, get_node, get_node_children, get_node_parent,
 			  get_subtree, is_root, in_tree, is_leaf, make_root, print_node,
 			  rename_node, search_tree, nodes, node_separator, root_node,
-			  root_name, __nonzero__, __str__
+			  root_name, __copy__, __eq__, __nonzero__, __str__
     :show-inheritance:
