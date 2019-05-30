@@ -81,6 +81,7 @@
 ..         wrap(paragraph)
 ..     else:
 ..         cog.outl("")
+.. cog.outl("")
 .. cog.outl("Interpreter")
 .. cog.outl("===========")
 .. cog.outl("")
@@ -359,6 +360,7 @@ Description
 
 This module can be used to build, handle, process and search `tries
 <https://en.wikipedia.org/wiki/Trie>`_
+
 Interpreter
 ===========
 
