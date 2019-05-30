@@ -58,14 +58,13 @@ Description
 .. _ReadTheDocs Sphinx theme: https://github.com/rtfd/sphinx_rtd_theme
 .. _Inline Syntax Highlight Sphinx Extension:
    https://bitbucket.org/klorenz/sphinxcontrib-inlinesyntaxhighlight
-.. _Shellcheck Linter Sphinx Extension: https://pypi.org/project
-   /sphinxcontrib-shellcheck
+.. _Shellcheck Linter Sphinx Extension:
+   https://pypi.org/project/sphinxcontrib-shellcheck
 .. _Tox: https://tox.readthedocs.io
 .. _Virtualenv: https://docs.python-guide.org/dev/virtualenvs
 
 This module can be used to build, handle, process and search `tries
 <https://en.wikipedia.org/wiki/Trie>`_
-
 Interpreter
 ===========
 
@@ -129,7 +128,6 @@ Contributing
        $
 
 5. Install the dependencies (if needed, done automatically by pip):
-
 
     * `Cog`_ (2.5.1 or newer)
 
@@ -218,7 +216,7 @@ Contributing
 
        $ PKG_NAME=ptrie tox -e py27-pkg -- -n 4
        GLOB sdist-make: .../ptrie/setup.py
-       py27-pkg inst-nodeps: .../ptrie/.tox/.tmp/package/1/ptrie-1.1.6.zip
+       py27-pkg inst-nodeps: .../ptrie/.tox/.tmp/package/1/ptrie-1.1.7.zip
        ...
          py27-pkg: commands succeeded
          congratulations :)
@@ -253,7 +251,7 @@ Contributing
 
        $ PKG_NAME=ptrie tox -e py27-test -- -x test_ptrie.py
        GLOB sdist-make: .../ptrie/setup.py
-       py27-pkg inst-nodeps: .../ptrie/.tox/.tmp/package/1/ptrie-1.1.6.zip
+       py27-pkg inst-nodeps: .../ptrie/.tox/.tmp/package/1/ptrie-1.1.7.zip
        ...
          py27-pkg: commands succeeded
          congratulations :)
@@ -273,7 +271,6 @@ Contributing
 9. Document the new feature or bug fix (if needed). The script
    :bash:`${PTRIE_DIR}/pypkg/build_docs.py` re-builds the whole package
    documentation (re-generates images, cogs source files, etc.):
-
 
    .. code-block:: console
 
@@ -312,7 +309,6 @@ Contributing
 .. [#f3] Tox configuration largely inspired by
    `Ionel's codelog <https://blog.ionelmc.ro/2015/04/14/
    tox-tricks-and-patterns/>`_
-
 
 License
 =======

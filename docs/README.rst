@@ -77,8 +77,10 @@
 .. cog.outl("")
 .. cog.outl("")
 .. for paragraph in PKG_LONG_DESC.split(os.linesep):
-..     wrap(paragraph)
-..     cog.outl("")
+..     if paragraph.strip():
+..         wrap(paragraph)
+..     else:
+..         cog.outl("")
 .. cog.outl("Interpreter")
 .. cog.outl("===========")
 .. cog.outl("")
@@ -350,14 +352,13 @@ Description
 .. _ReadTheDocs Sphinx theme: https://github.com/rtfd/sphinx_rtd_theme
 .. _Inline Syntax Highlight Sphinx Extension:
    https://bitbucket.org/klorenz/sphinxcontrib-inlinesyntaxhighlight
-.. _Shellcheck Linter Sphinx Extension: https://pypi.org/project
-   /sphinxcontrib-shellcheck
+.. _Shellcheck Linter Sphinx Extension:
+   https://pypi.org/project/sphinxcontrib-shellcheck
 .. _Tox: https://tox.readthedocs.io
 .. _Virtualenv: https://docs.python-guide.org/dev/virtualenvs
 
 This module can be used to build, handle, process and search `tries
 <https://en.wikipedia.org/wiki/Trie>`_
-
 Interpreter
 ===========
 
@@ -510,7 +511,7 @@ Contributing
 
        $ PKG_NAME=ptrie tox -e py27-pkg -- -n 4
        GLOB sdist-make: .../ptrie/setup.py
-       py27-pkg inst-nodeps: .../ptrie/.tox/.tmp/package/1/ptrie-1.1.6.zip
+       py27-pkg inst-nodeps: .../ptrie/.tox/.tmp/package/1/ptrie-1.1.7.zip
        ...
          py27-pkg: commands succeeded
          congratulations :)
@@ -545,7 +546,7 @@ Contributing
 
        $ PKG_NAME=ptrie tox -e py27-test -- -x test_ptrie.py
        GLOB sdist-make: .../ptrie/setup.py
-       py27-pkg inst-nodeps: .../ptrie/.tox/.tmp/package/1/ptrie-1.1.6.zip
+       py27-pkg inst-nodeps: .../ptrie/.tox/.tmp/package/1/ptrie-1.1.7.zip
        ...
          py27-pkg: commands succeeded
          congratulations :)

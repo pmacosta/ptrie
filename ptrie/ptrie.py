@@ -63,6 +63,50 @@ class Trie(object):
         """
         return bool(self._db)
 
+    def __eq__(self, other):  # noqa
+        """
+        Test object equality.
+
+        For example:
+
+            >>> from __future__ import print_function
+            >>> import copy
+            >>> import ptrie
+            >>> tobj1 = ptrie.Trie()
+            >>> tobj1.add_nodes([
+            ...     {'name':'root.branch1', 'data':5},
+            ...     {'name':'root.branch2', 'data':[]},
+            ...     {'name':'root.branch1.leaf1', 'data':[]},
+            ...     {'name':'root.branch1.leaf2', 'data':'Hello world!'}
+            ... ])
+            >>> print(tobj1)
+            root
+            ├branch1 (*)
+            │├leaf1
+            │└leaf2 (*)
+            └branch2
+            >>> tobj2 = copy.copy(tobj1)
+            >>> tobj1 == tobj2
+            True
+            >>> tobj2.add_nodes({'name':'root.branch1.leaf3', 'data':"xyz"})
+            >>> print(tobj2)
+            root
+            ├branch1 (*)
+            │├leaf1
+            │├leaf2 (*)
+            │└leaf3 (*)
+            └branch2
+            >>> tobj1 == tobj2
+            False
+        """
+        return (
+            isinstance(other, Trie)
+            and (self._db == other._db)
+            and (self._root == other._root)
+            and (self._root_hierarchy_length == other._root_hierarchy_length)
+            and (self._node_separator == self._node_separator)
+        )
+
     def __copy__(self, memodict=None):  # noqa
         memodict = {} if memodict is None else memodict
         cobj = Trie(self.node_separator)

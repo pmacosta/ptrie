@@ -206,6 +206,14 @@ class TestTrieNode(object):
             AI(obj._validate_nodes_with_data, "nodes", names=item)
 
     ### "Magic" methods
+    def test_eq(self, default_trees):
+        """Test __eq__ method behavior."""
+        _, _, _, tree4 = default_trees
+        tree5 = copy.copy(tree4)
+        assert tree4 == tree5
+        tree5.add_nodes({"name": "root.branch1.leaf2.subleaf3", "data": "xyz"})
+        assert not tree4 == tree5
+
     def test_copy(self, default_trees):
         """Test __copy__ method behavior."""
         _, _, _, tree4 = default_trees
